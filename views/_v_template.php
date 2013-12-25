@@ -25,6 +25,7 @@
                             <li><a href='/posts/'>View entry</a></li>
                             <li><a href='/posts/users'>Follow others</a></li>
                             <li><a href='/users/logout'>Log out</a></li>
+                            <li><a href='/posts/fuel'>Fuel Calculator</a></li>                            
                         <?php else: ?>
                             <li><a href='/users/signup'>Sign up</a></li>
                             <li><a href='/users/login'>Log in</a></li>
@@ -37,8 +38,7 @@
 
 
         <?php if(isset($content)) echo $content; ?>
-
-
+        <?php if(isset($fuel)) echo $fuel; ?>
         <?php if(isset($client_files_body)) echo $client_files_body; ?>
 
 

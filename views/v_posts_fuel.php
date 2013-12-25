@@ -4,24 +4,28 @@
 </head>
 <body>
 <div align="center">
+<section class="fuel">
 <h3>Fuel Cost Calculator</h3>
 <p>Here you can calculate your gas mileage and post details about your trip.</p>
 <p>Let's start with gas mileage calculations</p>
 <form name="form1" id="fuel" method='POST' action='/posts/addFuel'>
-<div align="left"><strong>Total expected miles:</strong>  
-  <input type="text" id="Miles" name="miles" placeholder="MILES" title="Miles"><br><br>    
-  <strong>Miles per Gallon of your vehicle:</strong>  
-  <input type="text" id="MPG" name="gas" placeholder="MPG" title="MPG"><br><br>
-  <strong>Average price of fuel:</strong>  
-  <input type="text" id="FuelPrice" name="price" placeholder="PRICE" title="Price"><br><br> 
-  <strong>The trip Cost:  $</strong>
-  <input type="text" id="FuelCost" name="cost" placeholder="COST" title="Cost" readonly><br> <br>   
-  <input type="button" value="Calculate" onclick="d()"> <br> <br> <input type="Reset" value="Clear"><br><br>
-  <input type="submit" id="submit" name="submit" title="submit"><br> <br>
+  <div align="left"><strong>Total expected miles:</strong>  
+    <input type="text" id="Miles" name="miles" placeholder="MILES" title="Miles"><br><br>    
+    <strong>Miles per Gallon of your vehicle:</strong>  
+    <input type="text" id="MPG" name="gas" placeholder="MPG" title="MPG"><br><br>
+    <strong>Average price of fuel:</strong>  
+    <input type="text" id="FuelPrice" name="price" placeholder="PRICE" title="Price"><br><br> 
+    <strong>The trip Cost:  $</strong>
+    <input type="text" id="FuelCost" name="cost" placeholder="COST" title="Cost" readonly><br> <br>   
+    <input type="button" value="Calculate" onclick="d()"> <br> <br> <input type="Reset" value="Clear"><br><br>
+    <input type="submit" id="submit" name="submit" title="submit"><br> <br>
+    <p id="mess"></p>
 </div>
-<p id="mess"></p>
 </form>
+</section>
 </div>
+
+
 <noscript>CBA Professionals is a FIRM that practices GREEN. Interested in learning more, visit us at cbaprofessionals.com
 </noscript>
 <script type="text/javascript">
@@ -32,7 +36,6 @@ function d(){
   var cost = document.form1.cost.value;
   E=c/b;
   F=E*a;
-  //document.form1.results.value="This trip will cost you $"+F+" with the miles entered.";
   document.form1.cost.value=F.toFixed(2);
   var y=document.getElementById("mess");
   y.innerHTML="";
@@ -51,9 +54,8 @@ function d(){
 
    
                 }
-  
 }
-// End -->
 </script>
+
 </body>
 </html>
