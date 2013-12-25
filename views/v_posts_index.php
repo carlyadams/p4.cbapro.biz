@@ -1,3 +1,8 @@
+<style type="text/css">
+body {
+	background-color: rgba(51,249,12,1);
+}
+</style>
 <section class="content posts">
         <h3> View Entries </h3>
         <?php foreach($posts as $post): ?>
@@ -17,7 +22,7 @@
             <h4 class="time"><time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
                 <?=Time::display($post['created'])?>
             </time>
-                </h4>
+          </h4>
 
 
         </article>

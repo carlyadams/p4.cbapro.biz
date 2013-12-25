@@ -1,3 +1,8 @@
+<style type="text/css">
+body {
+	background-color: rgba(51,249,12,1);
+}
+</style>
 <section class="content">
 <h3> Add Trip Details </h3>
 <form class="new-post" method='POST' action='/posts/p_add'>

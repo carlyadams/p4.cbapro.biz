@@ -1,6 +1,12 @@
 <!Doctype html>
 <html>
 <head>
+<meta charset="utf-8">
+<style type="text/css">
+body {
+	background-color: rgba(51,249,12,1);
+}
+</style>
 </head>
 <body>
 <div align="center">

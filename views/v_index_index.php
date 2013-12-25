@@ -1,3 +1,8 @@
+<style type="text/css">
+body {
+	background-color: rgba(51,249,12,1);
+}
+</style>
 <div class="container">
 
         <h1>Welcome to  <em class="brand">CBA Trip Calculator and Journal</em>.</h1>

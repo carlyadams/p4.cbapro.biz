@@ -1,3 +1,8 @@
+<style type="text/css">
+body {
+	background-color: rgba(51,249,12,1);
+}
+</style>
 <section class="content profile"> 
         <h3> Update Profile</h3>
         <h1> Welcome, <?=$user->first_name?>! </h1>

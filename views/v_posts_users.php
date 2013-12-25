@@ -1,3 +1,8 @@
+<style type="text/css">
+body {
+	background-color: rgba(51,249,12,1);
+}
+</style>
 <section class="content follow">
     <h3> Follow other GURUS and their trips</h3>
         
