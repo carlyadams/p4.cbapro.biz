@@ -1,41 +1,59 @@
-<section class="fuel">
-<h3> Add fuel cost details </h3>
-<form class="new-fuel posts" method='POST' action='/posts/addFuel'>
+<!Doctype html>
+<html>
+<head>
+</head>
+<body>
+<div align="center">
+<h3>Fuel Cost Calculator</h3>
 <p>Here you can calculate your gas mileage and post details about your trip.</p>
 <p>Let's start with gas mileage calculations</p>
-<p>
-  <label for="Miles">Enter your expected number of miles you will be traveling:</label>
-</p>
-<p>
-  <input name="Miles" type="number" required id="Miles" placeholder="Miles" title="Miles">
-</p>
-<p>
-  <label for="MPG">What are the average miles per gallon of your vehicle:</label>
-</p>
-<p>
-  <input name="MPG" type="number" required id="MPG" placeholder="MPG" title="MPG">
-</p>
-<p>
-  <label for="FuelPrice">What is the estimated fuel price:</label>
-</p>
-<p>
-  <input name="FuelPrice" type="number" required id="FuelPrice" placeholder="FuelPrice" title="FuelPrice">
-</p>
-<p>
-  <input name="Calculate" type="button" id="Calculate" title="Calculate" value="Calculate">
-</p>
-<p>
-  <label for="FuelCost">Your approximate fuel cost is:</label>
-</p>
-<p>
-  <input name="fuel" type="number" id="fuel" placeholder="FuelCost" title="Fuel Cost" readonly>
-</p>
-<p>
-  <input type="submit" name="submit" id="submit" value="Submit">
-</p>
-<p>
-  <input type="reset" name="reset" id="reset" value="Reset">
-</p>
-</form> 
-</section>
+<form name="form1" id="fuel" method='POST' action='/posts/addFuel'>
+<div align="left"><strong>Total expected miles:</strong>  
+  <input type="text" id="Miles" name="miles" placeholder="MILES" title="Miles"><br><br>    
+  <strong>Miles per Gallon of your vehicle:</strong>  
+  <input type="text" id="MPG" name="gas" placeholder="MPG" title="MPG"><br><br>
+  <strong>Average price of fuel:</strong>  
+  <input type="text" id="FuelPrice" name="price" placeholder="PRICE" title="Price"><br><br> 
+  <strong>The trip Cost:  $</strong>
+  <input type="text" id="FuelCost" name="cost" placeholder="COST" title="Cost" readonly><br> <br>   
+  <input type="button" value="Calculate" onclick="d()"> <br> <br> <input type="Reset" value="Clear"><br><br>
+  <input type="submit" id="submit" name="submit" title="submit"><br> <br>
+</div>
+<p id="mess"></p>
+</form>
+</div>
+<noscript>CBA Professionals is a FIRM that practices GREEN. Interested in learning more, visit us at cbaprofessionals.com
+</noscript>
+<script type="text/javascript">
+function d(){
+  var a = document.form1.miles.value;
+  var b = document.form1.gas.value;
+  var c = document.form1.price.value;
+  var cost = document.form1.cost.value;
+  E=c/b;
+  F=E*a;
+  //document.form1.results.value="This trip will cost you $"+F+" with the miles entered.";
+  document.form1.cost.value=F.toFixed(2);
+  var y=document.getElementById("mess");
+  y.innerHTML="";
+  				try{
+				if(a=="") throw "Please enter Miles";
+  				if(isNaN(a)) throw "A number is required for Miles";
+				if(b=="") throw "Please enter MPG";
+  				if(isNaN(b)) throw "A number is required for MPG";
+				if(c=="") throw "Please enter the Fuel Price";
+  				if(isNaN(c)) throw "A number is required for Fuel Price";
 
+				}
+				catch (err)
+				{
+				y.innerHTML="Error: " + err + ".";
+
+   
+                }
+  
+}
+// End -->
+</script>
+</body>
+</html>
