@@ -1,7 +1,7 @@
 <section class="content">
 
 
-  <h3> Sign Up</h3>
+  <h3> Sign Up to post your trip details</h3>
 
 
   <form method='POST' action='/users/p_signup'>

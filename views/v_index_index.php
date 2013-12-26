@@ -6,7 +6,7 @@ body {
 <div class="container">
 
 
-        <p>CBA Professionals presents another quality tool for you.  We have a tradition of being an outstanding Consulting Firm and our pursuit is to be green.  This Journal will carry you along with our pursuits. Here you can calculate fuel costs and save your trips.  Post your green trips and view other GURUS entries as well. Better life starts here. Please sign up for an account and join the green revolution; if you haven' already.</p>
+        <p>CBA Professionals presents another quality tool for you.  <br> We have a tradition of being an outstanding Consulting Firm and our pursuit is to be green.  <br> This Journal will carry you along with our pursuits. Here you can calculate fuel costs and save your trips.  <br> Post your green trips and view other GURUS entries as well. Better life starts here. <br> Please sign up for an account and join the green revolution; if you haven' already.</p>
     </div>
 
 
@@ -18,19 +18,10 @@ body {
             <?php include('v_users_signup.php'); ?>
         </div>
     </div>
-    <div class="greenmachine">
-        <ul>
-            <li>Sign up</li>
-            <li>Log in</li>
-            <li>Log out</li>
-            <li>Add entries ("Journals")</li>
-            <li>See a list of all users ("GURUS")</li>
-            <li>Follow and unfollow other GURUS</li>
-            <li>View Journals from other Greeners</li>
-        </ul>
      </div>
-<div>
-</div>
+<br>
+<br>
+<br>
 Please visit: <br>
 <a href=http://www.cbaprofessionals.com>CBA Professionals</a> <br>
 <a href=http://www.twitter.com/cbaprofessional>CBA Twitter Account</a> <br> 

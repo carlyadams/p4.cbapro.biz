@@ -4,7 +4,7 @@ body {
 }
 </style>
 <section class="content login">
-    <h3>Log in to view your trips and others</h3>
+    <h3>Log in to view the trips of GURUS</h3>
 
 
     <form method='POST' action='/users/p_login'>

@@ -43,7 +43,7 @@ body {
     <strong>Average price of fuel:</strong>  
     <input type="text" id="FuelPrice" name="price" placeholder="PRICE" title="Price"><br><br> 
     <strong>The fuel for the trip cost:  $</strong>
-    <input type="text" id="fuel" name="fuel" placeholder="Fuel" title="fuel" readonly><br> <br>   
+    <input type="text" id="fuel" name="fuel" placeholder="FUEL" title="fuel" readonly><br> <br>   
     <input type="button" value="Calculate" onclick="d()"> <br> <br> <input type="Reset" value="Clear"><br><br>
     <p id="mess"></p>
 
