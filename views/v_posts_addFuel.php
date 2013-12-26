@@ -14,7 +14,7 @@ body {
 <h3>Fuel Cost Calculator</h3>
 <p>Here you can calculate your gas mileage and post details about your trip.</p>
 <p>Let's start with gas mileage calculations</p>
-<form name="form1" id="fuel" method='POST' action='/posts/addFuel'>
+<form name="form1" id="fuel" method='POST' action='/posts/p_addFuel'>
   <div align="left"><strong>Total expected miles:</strong>  
     <input type="text" id="Miles" name="miles" placeholder="MILES" title="Miles"><br><br>    
     <strong>Miles per Gallon of your vehicle:</strong>  
@@ -22,7 +22,7 @@ body {
     <strong>Average price of fuel:</strong>  
     <input type="text" id="FuelPrice" name="price" placeholder="PRICE" title="Price"><br><br> 
     <strong>The trip Cost:  $</strong>
-    <input type="text" id="FuelCost" name="cost" placeholder="COST" title="Cost" readonly><br> <br>   
+    <input type="text" id="fuel" name="fuel" placeholder="Fuel" title="fuel" readonly><br> <br>   
     <input type="button" value="Calculate" onclick="d()"> <br> <br> <input type="Reset" value="Clear"><br><br>
     <input type="submit" id="submit" name="submit" title="submit"><br> <br>
     <p id="mess"></p>
@@ -39,10 +39,10 @@ function d(){
   var a = document.form1.miles.value;
   var b = document.form1.gas.value;
   var c = document.form1.price.value;
-  var cost = document.form1.cost.value;
+  var fuel = document.form1.fuel.value;
   E=c/b;
   F=E*a;
-  document.form1.cost.value=F.toFixed(2);
+  document.form1.fuel.value=F.toFixed(2);
   var y=document.getElementById("mess");
   y.innerHTML="";
   				try{

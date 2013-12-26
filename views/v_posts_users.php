@@ -8,9 +8,7 @@ body {
         
     <?php foreach($users as $user): ?>
         <article>
-            <!-- display this user's profile image -->
-            <img class="profile-pic" src="/uploads/avatars/<?=$user['image']?>" alt="<?=$user['first_name']?> <?=$user['last_name']?>">
-            <h4>
+
             <!-- Print this user's name -->
             <?=$user['first_name']?> <?=$user['last_name']?>
 

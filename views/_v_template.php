@@ -19,6 +19,7 @@
         <?php if(isset($client_files_head)) echo $client_files_head; ?>
         
 </head><body>        
+<h2> Welcome to CBA Trip Calculator and Journal! </h2>
 
 
         <nav>
@@ -27,13 +28,12 @@
                         <span style="font-size: 14px">
                         <?php if($user): ?>
                         </span>
-                        <li><a href='/users/profile'>Update profile</a></li>
+                        <li><a href='/users/profile'>View your profile</a></li>
                             <li><a href='/posts/add'>Add entry</a></li>
-                            <li><a href='/posts/'>View entry</a></li>
+                            <li><a href='/posts/'>View other GURU entries</a></li>
                             <li><a href='/posts/users'>Follow others</a></li>
                             <li><a href='/users/logout'>Log out</a></li>
-                            <li><a href='/posts/fuel'>Fuel Calculator</a></li>                            
-                        <span style="font-size: 14px">
+                             <span style="font-size: 14px">
                             <?php else: ?>
                         </span>
                             <li><a href='/users/signup'>Sign up</a></li>
@@ -41,7 +41,6 @@
                         <?php endif; ?>
                 </ul>
         </nav>
-<h2> Welcome to CBA Trip Calculator and Journal! </h2>
 
 
 
@@ -56,7 +55,7 @@
         <footer>
                 <div>
                 <p class="right pull-right">CBA Trip Calculator and Fuel Cost<br>
-                Carly Adams<br>
+                Developer: Carly Adams<br>
                 <a href="mailto:carlyadams@harvard.edu">carlyadams@harvard.edu</a>
                 </p>
         </div>

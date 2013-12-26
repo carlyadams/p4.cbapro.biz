@@ -38,9 +38,9 @@ A email designated to receive messages from the server. Examples:
 
 # If your app is going to have outgoing emails, you should fill in your SMTP settings
 # For this you could use gmail SMTP or something like http://sendgrid.com/
-	//define('SMTP_HOST', 'smtp.cbaro.biz');
-	//define('SMTP_USERNAME', 'p2');
-	//define('SMTP_PASSWORD', 'password');
+	//define('SMTP_HOST', 'smtp.cbapro.biz');
+	//define('SMTP_USERNAME', 'p4');
+	//define('SMTP_PASSWORD', 'cscie15');
 	
 	# Error codes
     define('ERROR_SIGNUP_MANDATORYFIELDS', 'errsignup1');

@@ -1,0 +1,403 @@
+[26-Dec-2013 16:04:34 UTC] PHP Parse error:  syntax error, unexpected T_STRING in /home/cbaprobi/public_html/environment.php on line 33
+[26-Dec-2013 16:04:49 UTC] PHP Parse error:  syntax error, unexpected T_STRING in /home/cbaprobi/public_html/environment.php on line 33
+[26-Dec-2013 16:05:52 UTC] PHP Parse error:  syntax error, unexpected T_STRING in /home/cbaprobi/public_html/environment.php on line 33
+[26-Dec-2013 16:05:54 UTC] PHP Parse error:  syntax error, unexpected T_STRING in /home/cbaprobi/public_html/environment.php on line 33
+[26-Dec-2013 16:07:55 UTC] PHP Warning:  require(/home/cbaprobi/public_html/p4.cbapro.biz//config/config.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/cbaprobi/public_html/p4.cbapro.biz/index.php on line 20
+[26-Dec-2013 16:07:55 UTC] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/home/cbaprobi/public_html/p4.cbapro.biz//config/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/cbaprobi/public_html/p4.cbapro.biz/index.php on line 20
+[26-Dec-2013 16:07:57 UTC] PHP Warning:  require(/home/cbaprobi/public_html/p4.cbapro.biz//config/config.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/cbaprobi/public_html/p4.cbapro.biz/index.php on line 20
+[26-Dec-2013 16:07:57 UTC] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/home/cbaprobi/public_html/p4.cbapro.biz//config/config.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/cbaprobi/public_html/p4.cbapro.biz/index.php on line 20
+[26-Dec-2013 11:10:34 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 11:10:34 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 11:11:32 America/New_York] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (28000/1045): Access denied for user 'cbaprobi_p4'@'localhost' (using password: YES) in /home/cbaprobi/public_html/core/libraries/DB.php on line 29
+[26-Dec-2013 11:11:37 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 11:11:37 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 11:19:16 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 11:19:16 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 11:19:23 America/New_York] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (28000/1045): Access denied for user 'cbaprobi_p4'@'localhost' (using password: YES) in /home/cbaprobi/public_html/core/libraries/DB.php on line 29
+[26-Dec-2013 11:19:27 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 11:19:27 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 11:31:35 America/New_York] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (28000/1045): Access denied for user 'cbaprobi_p4'@'localhost' (using password: YES) in /home/cbaprobi/public_html/core/libraries/DB.php on line 29
+[26-Dec-2013 11:49:43 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_email_example could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_email_example')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_email_example', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php(130): View::instance('v_email_example')
+#3 [internal function]: users_controller->p_signup()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(users_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 11:51:22 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 11:51:22 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 11:51:35 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 11:51:35 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 11:51:47 America/New_York] PHP Notice:  Undefined index: fuel in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php on line 84
+[26-Dec-2013 11:51:54 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_posts_fuel could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_posts_fuel')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_posts_fuel', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php(34): View::instance('v_posts_fuel')
+#3 [internal function]: posts_controller->addFuel()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(posts_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 11:54:29 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_posts_fuel could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_posts_fuel')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_posts_fuel', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php(34): View::instance('v_posts_fuel')
+#3 [internal function]: posts_controller->addFuel()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(posts_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 11:55:09 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_posts_fuel could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_posts_fuel')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_posts_fuel', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php(34): View::instance('v_posts_fuel')
+#3 [internal function]: posts_controller->addFuel()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(posts_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 11:55:43 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_posts_fuel could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_posts_fuel')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_posts_fuel', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php(34): View::instance('v_posts_fuel')
+#3 [internal function]: posts_controller->addFuel()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(posts_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 11:55:44 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_posts_fuel could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_posts_fuel')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_posts_fuel', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php(34): View::instance('v_posts_fuel')
+#3 [internal function]: posts_controller->addFuel()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(posts_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 11:56:30 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_posts_fuel could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_posts_fuel')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_posts_fuel', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php(34): View::instance('v_posts_fuel')
+#3 [internal function]: posts_controller->addFuel()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(posts_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 11:56:55 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_posts_fuel could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_posts_fuel')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_posts_fuel', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php(34): View::instance('v_posts_fuel')
+#3 [internal function]: posts_controller->addFuel()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(posts_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 11:57:07 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_posts_fuel could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_posts_fuel')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_posts_fuel', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php(34): View::instance('v_posts_fuel')
+#3 [internal function]: posts_controller->addFuel()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(posts_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 11:57:47 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_posts_fuel could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_posts_fuel')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_posts_fuel', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php(34): View::instance('v_posts_fuel')
+#3 [internal function]: posts_controller->addFuel()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(posts_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 11:57:50 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_posts_fuel could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_posts_fuel')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_posts_fuel', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php(34): View::instance('v_posts_fuel')
+#3 [internal function]: posts_controller->addFuel()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(posts_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 11:59:04 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_posts_fuel could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_posts_fuel')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_posts_fuel', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php(34): View::instance('v_posts_fuel')
+#3 [internal function]: posts_controller->addFuel()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(posts_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 11:59:06 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_posts_fuel could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_posts_fuel')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_posts_fuel', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php(34): View::instance('v_posts_fuel')
+#3 [internal function]: posts_controller->addFuel()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(posts_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 12:00:03 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_posts_fuel could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_posts_fuel')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_posts_fuel', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php(34): View::instance('v_posts_fuel')
+#3 [internal function]: posts_controller->addFuel()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(posts_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 12:02:19 America/New_York] PHP Notice:  Undefined index: fuel in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php on line 82
+[26-Dec-2013 12:02:39 America/New_York] PHP Notice:  Undefined index: fuel in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php on line 82
+[26-Dec-2013 12:06:14 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 12:06:14 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 12:10:25 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 12:10:25 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 12:16:57 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 12:16:57 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 12:17:05 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 12:17:05 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 12:36:33 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 12:36:33 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 12:36:43 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 12:36:43 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 12:37:05 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_email_example could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_email_example')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_email_example', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php(130): View::instance('v_email_example')
+#3 [internal function]: users_controller->p_signup()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(users_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 12:46:44 America/New_York] PHP Notice:  Undefined index: email in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 66
+[26-Dec-2013 12:46:53 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 12:46:53 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 12:47:11 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'The requested view v_email_example could not be found' in /home/cbaprobi/public_html/core/libraries/View.php:178
+Stack trace:
+#0 /home/cbaprobi/public_html/core/libraries/View.php(97): View->set_filename('v_email_example')
+#1 /home/cbaprobi/public_html/core/libraries/View.php(23): View->__construct('v_email_example', NULL)
+#2 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php(130): View::instance('v_email_example')
+#3 [internal function]: users_controller->p_signup()
+#4 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(users_controller), Array)
+#5 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#6 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#7 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 178
+[26-Dec-2013 12:53:58 America/New_York] PHP Notice:  Undefined index: first_name in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 40
+[26-Dec-2013 12:53:58 America/New_York] PHP Notice:  Undefined index: last_name in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 41
+[26-Dec-2013 12:53:58 America/New_York] PHP Notice:  Undefined index: email in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 42
+[26-Dec-2013 12:54:03 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 12:54:03 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 12:54:19 America/New_York] PHP Fatal error:  Call to undefined method users_controller::email_signup_confimation() in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 80
+[26-Dec-2013 12:55:14 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 12:55:14 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:00:20 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:00:20 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:01:14 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:01:14 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:01:49 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:01:49 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:11:44 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:11:44 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:12:05 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:12:05 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:12:09 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:12:09 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:14:17 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'View variable is not set: content' in /home/cbaprobi/public_html/core/libraries/View.php:125
+Stack trace:
+#0 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php(54): View->__get('content')
+#1 [internal function]: users_controller->p_signup()
+#2 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(users_controller), Array)
+#3 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#4 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#5 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 125
+[26-Dec-2013 13:14:26 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 57
+[26-Dec-2013 13:14:26 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'View variable is not set: content' in /home/cbaprobi/public_html/core/libraries/View.php:125
+Stack trace:
+#0 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php(63): View->__get('content')
+#1 [internal function]: users_controller->p_signup()
+#2 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(users_controller), Array)
+#3 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#4 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#5 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 125
+[26-Dec-2013 13:19:05 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:19:05 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:19:06 America/New_York] PHP Parse error:  syntax error, unexpected T_PRIVATE in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 93
+[26-Dec-2013 13:19:14 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:19:14 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:19:17 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:19:17 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:19:18 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:19:18 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:19:20 America/New_York] PHP Parse error:  syntax error, unexpected T_PRIVATE in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 93
+[26-Dec-2013 13:19:44 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:19:44 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:19:51 America/New_York] PHP Parse error:  syntax error, unexpected T_PRIVATE in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 93
+[26-Dec-2013 13:19:54 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:19:54 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:20:57 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:20:57 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:20:58 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:20:58 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:21:05 America/New_York] PHP Fatal error:  Uncaught exception 'Exception' with message 'View variable is not set: content' in /home/cbaprobi/public_html/core/libraries/View.php:125
+Stack trace:
+#0 /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php(53): View->__get('content')
+#1 [internal function]: users_controller->p_signup()
+#2 /home/cbaprobi/public_html/core/libraries/Router.php(233): ReflectionMethod->invokeArgs(Object(users_controller), Array)
+#3 /home/cbaprobi/public_html/core/libraries/Router.php(162): Router::execute()
+#4 /home/cbaprobi/public_html/p4.cbapro.biz/index.php(31): Router::init()
+#5 {main}
+  thrown in /home/cbaprobi/public_html/core/libraries/View.php on line 125
+[26-Dec-2013 13:21:39 America/New_York] PHP Notice:  Undefined index: first_name in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 40
+[26-Dec-2013 13:21:39 America/New_York] PHP Notice:  Undefined index: last_name in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 41
+[26-Dec-2013 13:21:39 America/New_York] PHP Notice:  Undefined index: email in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 42
+[26-Dec-2013 13:21:42 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:21:42 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:21:53 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:21:53 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:22:14 America/New_York] PHP Notice:  Undefined index: avatar in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 278
+[26-Dec-2013 13:22:22 America/New_York] PHP Notice:  Undefined index: avatar in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 278
+[26-Dec-2013 13:22:22 America/New_York] PHP Notice:  Undefined index: extension in /home/cbaprobi/public_html/core/libraries/Upload.php on line 40
+[26-Dec-2013 13:22:22 America/New_York] PHP Notice:  Undefined index: extension in /home/cbaprobi/public_html/core/libraries/Upload.php on line 43
+[26-Dec-2013 13:22:34 America/New_York] PHP Notice:  Undefined index: avatar in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 278
+[26-Dec-2013 13:22:50 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:22:50 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:22:52 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:22:52 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:23:18 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:23:18 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:23:22 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:23:22 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:24:12 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:24:12 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:24:54 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:24:54 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:25:19 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:25:19 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:26:07 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:26:07 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:32:23 America/New_York] PHP Notice:  Undefined index: avatar in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_users.php on line 278
+[26-Dec-2013 13:32:42 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:32:42 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:32:48 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:32:48 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:40:00 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:40:00 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:44:31 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING, expecting ']' in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 20
+[26-Dec-2013 13:44:36 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING, expecting ']' in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 20
+[26-Dec-2013 13:44:43 America/New_York] PHP Parse error:  syntax error, unexpected T_STRING, expecting ']' in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 20
+[26-Dec-2013 13:46:37 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:46:37 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:46:51 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:46:51 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:47:13 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:47:13 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:52:23 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:52:23 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:52:46 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 13:52:46 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 13:57:43 America/New_York] PHP Fatal error:  Call to undefined method posts_controller::following() in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php on line 117
+[26-Dec-2013 13:57:49 America/New_York] PHP Fatal error:  Call to undefined method posts_controller::following() in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php on line 117
+[26-Dec-2013 13:59:40 America/New_York] PHP Notice:  Undefined index: image in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 13
+[26-Dec-2013 13:59:40 America/New_York] PHP Notice:  Undefined index: fuel in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 18
+[26-Dec-2013 13:59:40 America/New_York] PHP Notice:  Undefined index: image in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 13
+[26-Dec-2013 13:59:40 America/New_York] PHP Notice:  Undefined index: fuel in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 18
+[26-Dec-2013 13:59:40 America/New_York] PHP Notice:  Undefined index: image in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 13
+[26-Dec-2013 13:59:40 America/New_York] PHP Notice:  Undefined index: fuel in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 18
+[26-Dec-2013 14:00:20 America/New_York] PHP Notice:  Undefined index: image in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 13
+[26-Dec-2013 14:00:20 America/New_York] PHP Notice:  Undefined index: fuel in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 18
+[26-Dec-2013 14:00:20 America/New_York] PHP Notice:  Undefined index: image in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 13
+[26-Dec-2013 14:00:20 America/New_York] PHP Notice:  Undefined index: fuel in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 18
+[26-Dec-2013 14:00:20 America/New_York] PHP Notice:  Undefined index: image in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 13
+[26-Dec-2013 14:00:20 America/New_York] PHP Notice:  Undefined index: fuel in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 18
+[26-Dec-2013 14:00:36 America/New_York] PHP Notice:  Undefined index: image in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 13
+[26-Dec-2013 14:00:36 America/New_York] PHP Notice:  Undefined index: fuel in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 18
+[26-Dec-2013 14:00:36 America/New_York] PHP Notice:  Undefined index: image in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 13
+[26-Dec-2013 14:00:36 America/New_York] PHP Notice:  Undefined index: fuel in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 18
+[26-Dec-2013 14:00:36 America/New_York] PHP Notice:  Undefined index: image in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 13
+[26-Dec-2013 14:00:36 America/New_York] PHP Notice:  Undefined index: fuel in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_posts_index.php on line 18
+[26-Dec-2013 14:06:14 America/New_York] PHP Parse error:  syntax error, unexpected T_AS in /home/cbaprobi/public_html/p4.cbapro.biz/controllers/c_posts.php on line 131
+[26-Dec-2013 14:13:27 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:13:27 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:33:26 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:33:26 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:34:28 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:34:28 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:34:30 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:34:30 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:35:11 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:35:11 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:35:49 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:35:49 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:36:07 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:36:07 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:36:16 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:36:16 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:36:25 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:36:25 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:37:17 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:37:17 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:37:57 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:37:57 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:38:50 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:38:50 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:39:34 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:39:34 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:39:38 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:39:38 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:40:06 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:40:06 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:40:46 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:40:46 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:43:55 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:43:55 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:44:15 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:44:15 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:45:09 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:45:09 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:45:23 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:45:23 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:45:31 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:45:31 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 14:45:34 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 14:45:34 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 15:08:12 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 15:08:12 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 15:09:37 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 15:09:37 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23
+[26-Dec-2013 15:11:49 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 18
+[26-Dec-2013 15:11:49 America/New_York] PHP Notice:  Undefined variable: error in /home/cbaprobi/public_html/p4.cbapro.biz/views/v_users_login.php on line 23

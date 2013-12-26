@@ -1,0 +1,257 @@
+2013-12-26 11:11:32 - INFO --> -------------------------- 
+2013-12-26 11:11:32 - INFO --> Controller/Method: users/p_login 
+2013-12-26 11:11:32 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 11:11:32 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 11:11:32 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 11:11:32 - INFO --> CC:  
+2013-12-26 11:11:32 - INFO --> BCC:  
+2013-12-26 11:11:32 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 11:11:32 - INFO --> Body: <h2>SQL Error</h2>Access denied for user 'cbaprobi_p4'@'localhost' (using password: YES)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_login<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 8e06c9b6915dac4bce1020739372fad8
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [email] => carlyba 
+2013-12-26 11:19:23 - INFO --> -------------------------- 
+2013-12-26 11:19:23 - INFO --> Controller/Method: users/p_login 
+2013-12-26 11:19:23 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 11:19:23 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 11:19:23 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 11:19:23 - INFO --> CC:  
+2013-12-26 11:19:23 - INFO --> BCC:  
+2013-12-26 11:19:23 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 11:19:23 - INFO --> Body: <h2>SQL Error</h2>Access denied for user 'cbaprobi_p4'@'localhost' (using password: YES)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_login<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 8e06c9b6915dac4bce1020739372fad8
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [email] => carlyba 
+2013-12-26 11:31:35 - INFO --> -------------------------- 
+2013-12-26 11:31:35 - INFO --> Controller/Method: users/p_login 
+2013-12-26 11:31:35 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 11:31:35 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 11:31:35 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 11:31:35 - INFO --> CC:  
+2013-12-26 11:31:35 - INFO --> BCC:  
+2013-12-26 11:31:35 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 11:31:35 - INFO --> Body: <h2>SQL Error</h2>Access denied for user 'cbaprobi_p4'@'localhost' (using password: YES)<h2>Query History</h2><h2>Routed Controller/Method:</h2> users/p_login<br/><h2>Cookies</h2><pre>Array
+(
+    [PHPSESSID] => 8e06c9b6915dac4bce1020739372fad8
+)
+</pre><h2>POST</h2><pre>Array
+(
+    [email] => d
+    [ 
+2013-12-26 12:12:36 - INFO --> -------------------------- 
+2013-12-26 12:12:36 - INFO --> Controller/Method: posts/p_addFuel 
+2013-12-26 12:12:36 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 12:12:36 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 12:12:36 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 12:12:36 - INFO --> CC:  
+2013-12-26 12:12:36 - INFO --> BCC:  
+2013-12-26 12:12:36 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 12:12:36 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET miles = '100', gas = '17', price = '3.75', fuel = '22.06', submit = 'Submit Query', user_id = '10', created = '1388077956', modified = '1388077956' Unknown column 'miles' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '1a 
+2013-12-26 12:15:43 - INFO --> -------------------------- 
+2013-12-26 12:15:43 - INFO --> Controller/Method: posts/p_addFuel 
+2013-12-26 12:15:43 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 12:15:43 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 12:15:43 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 12:15:43 - INFO --> CC:  
+2013-12-26 12:15:43 - INFO --> BCC:  
+2013-12-26 12:15:43 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 12:15:43 - INFO --> Body: <h2>SQL Error</h2> INSERT INTO posts SET miles = '100', gas = '17', price = '3.75', fuel = '22.06', submit = 'Submit Query', user_id = '10', created = '1388078143', modified = '1388078143' Unknown column 'submit' in 'field list'<h2>Query History</h2>0 = SELECT *
+					FROM users
+					WHERE token = '1 
+2013-12-26 12:55:21 - INFO --> -------------------------- 
+2013-12-26 12:55:21 - INFO --> Controller/Method: posts/index 
+2013-12-26 12:55:21 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 12:55:21 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 12:55:21 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 12:55:21 - INFO --> CC:  
+2013-12-26 12:55:21 - INFO --> BCC:  
+2013-12-26 12:55:21 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 12:55:21 - INFO --> Body: <h2>SQL Error</h2> SELECT 
+                    posts.content,
+                    posts.created,
+					posts.location,
+					posts.travellers,
+					posts.fuel,
+                    posts.user_id AS post_user_id,
+                    users_users.user_id AS follower_id,
+                    users.first_nam 
+2013-12-26 13:11:58 - INFO --> -------------------------- 
+2013-12-26 13:11:58 - INFO --> Controller/Method: users/p_signup 
+2013-12-26 13:11:58 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 13:11:58 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 13:11:58 - INFO --> To: 1 1 (1),  
+2013-12-26 13:11:58 - INFO --> CC:  
+2013-12-26 13:11:58 - INFO --> BCC:  
+2013-12-26 13:11:58 - INFO --> Subject: Welcome to CBA Trip Calculator and Journal! 
+2013-12-26 13:11:58 - INFO --> Body: Hi 1, this is a message to confirm your registration at CBA Trip Calculator and Journal. Visit http://p4.cbapro.biz to login. 
+2013-12-26 13:12:26 - INFO --> -------------------------- 
+2013-12-26 13:12:26 - INFO --> Controller/Method: users/p_signup 
+2013-12-26 13:12:26 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 13:12:26 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 13:12:26 - INFO --> To: 2 2 (2),  
+2013-12-26 13:12:26 - INFO --> CC:  
+2013-12-26 13:12:26 - INFO --> BCC:  
+2013-12-26 13:12:26 - INFO --> Subject: Welcome to CBA Trip Calculator and Journal! 
+2013-12-26 13:12:26 - INFO --> Body: Hi 2, this is a message to confirm your registration at CBA Trip Calculator and Journal. Visit http://p4.cbapro.biz to login. 
+2013-12-26 13:16:02 - INFO --> -------------------------- 
+2013-12-26 13:16:02 - INFO --> Controller/Method: users/p_signup 
+2013-12-26 13:16:02 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 13:16:02 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 13:16:02 - INFO --> To: 5 5 (5),  
+2013-12-26 13:16:02 - INFO --> CC:  
+2013-12-26 13:16:02 - INFO --> BCC:  
+2013-12-26 13:16:02 - INFO --> Subject: Welcome to CBA Trip Calculator and Journal! 
+2013-12-26 13:16:02 - INFO --> Body: Hi 5, this is a message to confirm your registration at CBA Trip Calculator and Journal. Visit http://p4.cbapro.biz to login. 
+2013-12-26 13:21:49 - INFO --> -------------------------- 
+2013-12-26 13:21:49 - INFO --> Controller/Method: users/p_signup 
+2013-12-26 13:21:49 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 13:21:49 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 13:21:49 - INFO --> To: g g (g),  
+2013-12-26 13:21:49 - INFO --> CC:  
+2013-12-26 13:21:49 - INFO --> BCC:  
+2013-12-26 13:21:49 - INFO --> Subject: Welcome to CBA Trip Calculator and Journal! 
+2013-12-26 13:21:49 - INFO --> Body: Hi g, this is a message to confirm your registration at CBA Trip Calculator and Journal. Visit http://p4.cbapro.biz to login. 
+2013-12-26 14:09:08 - INFO --> -------------------------- 
+2013-12-26 14:09:08 - INFO --> Controller/Method: posts/index 
+2013-12-26 14:09:08 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 14:09:08 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 14:09:08 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 14:09:08 - INFO --> CC:  
+2013-12-26 14:09:08 - INFO --> BCC:  
+2013-12-26 14:09:08 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 14:09:08 - INFO --> Body: <h2>SQL Error</h2> SELECT 
+                    posts.content,
+                    posts.created,
+					posts.location,
+					posts.travelers,
+					posts.fuel,
+                    posts.user_id AS post_user_id,
+                    users_users.user_id AS follower_id,
+                    users.first_name 
+2013-12-26 14:09:55 - INFO --> -------------------------- 
+2013-12-26 14:09:55 - INFO --> Controller/Method: posts/index 
+2013-12-26 14:09:55 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 14:09:55 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 14:09:55 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 14:09:55 - INFO --> CC:  
+2013-12-26 14:09:55 - INFO --> BCC:  
+2013-12-26 14:09:55 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 14:09:55 - INFO --> Body: <h2>SQL Error</h2> SELECT 
+                    posts.content,
+                    posts.created,
+					posts.location,
+					posts.travelers,
+					posts.fuel,
+                    posts.user_id AS post_user_id,
+                    users_users.user_id AS follower_id,
+                    users.first_name 
+2013-12-26 14:10:55 - INFO --> -------------------------- 
+2013-12-26 14:10:55 - INFO --> Controller/Method: posts/index 
+2013-12-26 14:10:55 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 14:10:55 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 14:10:55 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 14:10:55 - INFO --> CC:  
+2013-12-26 14:10:55 - INFO --> BCC:  
+2013-12-26 14:10:55 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 14:10:55 - INFO --> Body: <h2>SQL Error</h2> SELECT 
+                    posts.content,
+                    posts.created,
+					posts.location,
+					posts.travelers,
+					posts.fuel,
+                    posts.user_id AS post_user_id,
+                    users_users.user_id AS follower_id,
+                    users.first_name 
+2013-12-26 14:11:38 - INFO --> -------------------------- 
+2013-12-26 14:11:38 - INFO --> Controller/Method: posts/index 
+2013-12-26 14:11:38 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 14:11:38 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 14:11:38 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 14:11:38 - INFO --> CC:  
+2013-12-26 14:11:38 - INFO --> BCC:  
+2013-12-26 14:11:38 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 14:11:38 - INFO --> Body: <h2>SQL Error</h2> SELECT 
+                    posts.content,
+                    posts.created,
+					posts.location,
+					posts.travelers,
+					posts.fuel,
+                    posts.user_id AS post_user_id,
+                    users_users.user_id AS follower_id,
+                    users.first_name 
+2013-12-26 14:11:53 - INFO --> -------------------------- 
+2013-12-26 14:11:53 - INFO --> Controller/Method: posts/index 
+2013-12-26 14:11:53 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 14:11:53 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 14:11:53 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 14:11:53 - INFO --> CC:  
+2013-12-26 14:11:53 - INFO --> BCC:  
+2013-12-26 14:11:53 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 14:11:53 - INFO --> Body: <h2>SQL Error</h2> SELECT 
+                    posts.content,
+                    posts.created,
+					posts.location,
+					posts.travelers,
+					posts.fuel,
+                    posts.user_id AS post_user_id,
+                    users_users.user_id AS follower_id,
+                    users.first_name 
+2013-12-26 14:11:55 - INFO --> -------------------------- 
+2013-12-26 14:11:55 - INFO --> Controller/Method: posts/index 
+2013-12-26 14:11:55 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 14:11:55 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 14:11:55 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 14:11:55 - INFO --> CC:  
+2013-12-26 14:11:55 - INFO --> BCC:  
+2013-12-26 14:11:55 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 14:11:55 - INFO --> Body: <h2>SQL Error</h2> SELECT 
+                    posts.content,
+                    posts.created,
+					posts.location,
+					posts.travelers,
+					posts.fuel,
+                    posts.user_id AS post_user_id,
+                    users_users.user_id AS follower_id,
+                    users.first_name 
+2013-12-26 14:11:58 - INFO --> -------------------------- 
+2013-12-26 14:11:58 - INFO --> Controller/Method: posts/index 
+2013-12-26 14:11:58 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 14:11:58 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 14:11:58 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 14:11:58 - INFO --> CC:  
+2013-12-26 14:11:58 - INFO --> BCC:  
+2013-12-26 14:11:58 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 14:11:58 - INFO --> Body: <h2>SQL Error</h2> SELECT 
+                    posts.content,
+                    posts.created,
+					posts.location,
+					posts.travelers,
+					posts.fuel,
+                    posts.user_id AS post_user_id,
+                    users_users.user_id AS follower_id,
+                    users.first_name 
+2013-12-26 14:12:08 - INFO --> -------------------------- 
+2013-12-26 14:12:08 - INFO --> Controller/Method: posts/index 
+2013-12-26 14:12:08 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 14:12:08 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 14:12:08 - INFO --> To: CBA Trip Calculator and Journal (help@cbapro.biz),  
+2013-12-26 14:12:08 - INFO --> CC:  
+2013-12-26 14:12:08 - INFO --> BCC:  
+2013-12-26 14:12:08 - INFO --> Subject: CBA Trip Calculator and Journal SQL Error 
+2013-12-26 14:12:08 - INFO --> Body: <h2>SQL Error</h2> SELECT 
+                    posts.content,
+                    posts.created,
+					posts.location,
+					posts.travelers,
+					posts.fuel,
+                    posts.user_id AS post_user_id,
+                    users_users.user_id AS follower_id,
+                    users.first_name 

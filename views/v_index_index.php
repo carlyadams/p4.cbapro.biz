@@ -5,7 +5,7 @@ body {
 </style>
 <div class="container">
 
-        <h1>Welcome to  <em class="brand">CBA Trip Calculator and Journal</em>.</h1>
+
         <p>CBA Professionals presents another quality tool for you.  We have a tradition of being an outstanding Consulting Firm and our pursuit is to be green.  This Journal will carry you along with our pursuits. Here you can calculate fuel costs and save your trips.  Post your green trips and view other GURUS entries as well. Better life starts here. Please sign up for an account and join the green revolution; if you haven' already.</p>
     </div>
 

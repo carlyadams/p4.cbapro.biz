@@ -16,132 +16,91 @@ class users_controller extends base_controller {
     }
 
 
-    public function signup() {
-            # Set up the view
+
+    public function signup($error_code = NULL, $email = NULL) {
         $this->template->content = View::instance('v_users_signup');
-        $this->template->title = "Sign up";
+        $this->template->title = "Sign Up | ".APP_NAME;
 
 
+        if ($error_code == ERROR_ALREADYREGISTERED) {
+            $this->template->content->error = "Email ".$email." already registered.";
+            $this->template->content->loginOption = true;
+        }
+        elseif ($error_code == ERROR_SIGNUP_MANDATORYFIELDS) {
+            $this->template->content->error = "All fields are required. Please try again.";
+        }
 
 
-        # Render the view
-        if(!$_POST){
-            echo $this->template;
-            return;
-        }   
-
-
+        echo $this->template;
     }
 
 
-       
     public function p_signup($error=NULL) {
-
-
-        $this->template->content=View::instance('v_users_signup');
-        $this->template->title = "Sign Up";
-            
-        # initiate error to false
-        $error = false;
-
-
-        #  initiate error
-        $this->template->content->error = '';
-
-
-        # check POST data for valid input
-        foreach($_POST as $field_name => $value){
-            # Escape HTML chars (XSS attacks)
-            $value = stripslashes(htmlspecialchars($value));
-            # if an field is blank, add a message to the error view variable
-            if (trim($value) == ""){
-                $error = true;
-                $this->template->content->error = '<p>All fields are required.</p>';
-            }
+        // Make sure all fields are field out
+        $_POST['first_name'] = trim($_POST['first_name']);
+        $_POST['last_name'] = trim($_POST['last_name']);
+        $_POST['email'] = trim($_POST['email']);
+        if (!$_POST['first_name'] or !$_POST['last_name'] or !$_POST['email'] or !$_POST['password']) {
+            Router::redirect('/users/signup/'.ERROR_SIGNUP_MANDATORYFIELDS);
         }
-        if ($error) {
-            echo $this->template;
+
+
+
+        // Check if user exist
+        $q = 'SELECT * FROM users WHERE email="'.$_POST['email'].'"';
+        $user = DB::instance(DB_NAME)->select_row($q);
+
+
+        if (isset($user)) {
+            ///// Existing user ////
+
+
+            Router::redirect('/users/signup/'.ERROR_ALREADYREGISTERED.'/'.$_POST['email']);
         }
-        # email address format validation
-        else if (!(preg_match('/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/',$_POST['email']))) {
-            $error = true;
-            $this->template->content->error = '<p>Please input a valid email addreess.</p>';
-            echo $this->template;
-        }
-       # check whether the email address already exists
-        else {   
-            $_POST = DB::instance(DB_NAME) ->sanitize($_POST);
-            $exists = DB::instance(DB_NAME)->select_field("SELECT email FROM users WHERE email = '" . $_POST['email'] . "'");
+        else {
+            ///// new user
 
 
-            if (isset($exists)) {
-                $error = true;
-                $this->template->content->error = '<p>This email is already registered. You could <a href="/users/login">login</a> instead.</p>';
-                echo $this->template;
-            }
+            // Encrypt password
+            $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);
+            // Generate token
+            $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
 
 
-            # ensure password is typed correctly
-            else if ($_POST['password'] != $_POST['retype']) {
-                $error= true;
-                $this->template->content->error = '<p> Password fields don&apos;t match.</p>';
-                echo $this->template;
+            // Add timestamps
+            $_POST['created'] = Time::now();
+            $_POST['modified'] = Time::now();
+            $_POST['timezone'] = TIMEZONE;
 
 
-            }
-            #unset the 'retype' field (no need any more)
-            else {
-                unset($_POST['retype']);
-                # Dump out the results of POST to see what the form submitted
-                // print_r($_POST);
+            // Insert new user data to DB
+            DB::instance(DB_NAME)->insert_row('users', $_POST);
 
 
-                # Insert this user into the database
-                
-                $_POST['created'] = Time::now();
-                $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);
-                $_POST['token']  = $token = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
-                $_POST['image']='placeholder.jpg';
+            // send email confirmation
+            $this->email_signup_confimation($_POST);
 
 
-                $user_id = DB::instance(DB_NAME)->insert('users', $_POST);
-
-
-                # all users follow their own posts by default
-                $data = Array(
-                    "created" => Time::now(),
-                    "user_id" => $user_id,
-                    "user_id_followed" => $user_id
-                    );
-
-
-                # Do the insert
-                DB::instance(DB_NAME)->insert('users_users', $data);
-
-
-                # Store this token in a cookie using setcookie()
-                setcookie("token", $token, strtotime('+1 year'), '/');
-
-
-                    
-                $to[]= Array("name" => $_POST['first_name'].$_POST['last_name'], "email" => $_POST['email']);
-                $from[]= Array("name" => APP_NAME, "email" => APP_EMAIL);
-                $subject = "Welcome CBA Trip Calculator and Journal!";
-                $body = View::instance('v_email_example');
-                    
-
-
-                # Send email
-                Email::send($to,$from,$subject,$body,true,'','');
-
-
-                # Send them to the main page 
-                Router::redirect("/users/profile");
-            }
+            Router::redirect('/users/login/noerror/'.INFO_SIGNUP_SUCCESS);
         }
     }
 
 
+    private function email_signup_confimation($user_info) {
+        if ($user_info) {
+            $to[] = Array(
+                "name" => $user_info['first_name']." ".$user_info['last_name'],
+                "email" => $user_info['email']
+            );
+            $from = Array("name" => APP_NAME, "email" => APP_EMAIL);
+            $subject = "Welcome to ".APP_NAME."!";
+            $body = "Hi ".$user_info['first_name'].", this is a message to confirm your registration at ".APP_NAME.
+                ". Visit http://p4.cbapro.biz to login.";
+            $cc  = APP_EMAIL;
+            $bcc = "";
+            $email = Email::send($to, $from, $subject, $body, true, $cc, $bcc);
+        }
+    }
 
 
                   

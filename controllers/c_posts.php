@@ -61,61 +61,15 @@
 
 
         }
-		
-		        public function addFuel() {
 
-
-            # Setup view
-            $this->template->content = View::instance('v_posts_fuel');
-            $this->template->title   = "New Trip fuel Entry";
-
-
-            # Render template
-            echo $this->template;
-
-
-        }
-		
-		        public function fuel() {
-
-
-            # blank post is not allowed.
-            if (!$_POST['fuel']) {
-                
-                echo "Please post your trip details here. <br><a href='/posts/addFuel'>Go back</a>";
-                
-            } else {
-
-
-
-
-            # Associate this post with this user
-            $_POST['user_id']  = $this->user->user_id;
-
-
-            # Unix timestamp of when this post was created / modified
-            $_POST['created']  = Time::now();
-            $_POST['modified'] = Time::now();
-
-
-            # Insert
-            # Note we didn't have to sanitize any of the $_POST data because we're using the insert method which does it for us
-            DB::instance(DB_NAME)->insert('posts', $_POST);
-
-
-            # Quick and dirty feedback
-            echo "Your entry has been added. <br><a href='/posts/addFuel'>Do you have more details to share?</a> <br> <a href='/'>Back to main page</a>";
-        }
-
-
-        }
 		
 		
          public function index() {
             # Set up the View
             $this->template->content = View::instance('v_posts_index');
             $this->template->title   = "Entries";
-
+        $this->template->content->page_after_add = 'mine';
+        $this->template->content->page_after_delete = 'mine';
 
             # Build the query
             $q = 'SELECT 
@@ -129,6 +83,7 @@
                     users.first_name,
                     users.last_name,
                     users.image
+
                 FROM posts
                 INNER JOIN users_users 
                     ON posts.user_id = users_users.user_id_followed
@@ -240,7 +195,89 @@
 
         }
 
+    public function p_delete($post_id, $next_page = NULL)
+    {
+        if ($post_id) {
+            // Delete the post if it belongs to the user
+            $where = "WHERE post_id = ".$post_id." AND user_id = ".$this->user->user_id;
 
+
+            DB::instance(DB_NAME)->delete('posts',$where);
+        }
+
+
+        Router::redirect('/posts/'.$next_page);
+    }
+
+    public function following() {
+        $this->template->content = View::instance('v_posts_index');
+        $this->template->title = "Trips| ".APP_NAME;
+        $this->template->content->page_after_delete = 'following';
+        $this->template->content->page_after_add = 'following';
+
+
+        // Retrieve posts from followed users and the users own posts
+        $q = "(SELECT posts.post_id AS post_id, posts.content AS content, posts.created AS created, posts.user_id AS user_id, users.first_name AS first_name,
+                users.last_name AS last_name FROM posts
+                INNER JOIN users_followers ON users_followers.user_id=posts.user_id
+                INNER JOIN users ON posts.user_id = users.user_id
+                WHERE follower_user_id=".$this->user->user_id.
+            ") UNION (".
+                "SELECT post_id, content, created, user_id, '".$this->user->first_name."' AS first_name, '".
+                    $this->user->last_name."' AS last_name
+                    FROM posts WHERE user_id = ".$this->user->user_id.
+            ") ORDER BY created DESC";
+
+
+        $posts = DB::instance(DB_NAME)->select_rows($q);
+
+
+        // Display posts
+        $this->template->content->posts = $posts;
+        echo $this->template;
+    }
+
+    public function all() {
+        $this->template->content = View::instance('v_posts_index');
+        $this->template->content->page_after_delete = 'all';
+        $this->template->content->page_after_add = 'all';
+
+
+        // Retrieve posts from DB
+        $q = "SELECT posts.content, posts.post_id, posts.created, posts.user_id, users.first_name, users.last_name FROM posts
+                INNER JOIN users ON posts.user_id = users.user_id
+                ORDER BY posts.created DESC";
+        $posts = DB::instance(DB_NAME)->select_rows($q);
+
+
+        // Display posts
+        $this->template->content->posts = $posts;
+        echo $this->template;
+    }
+
+
+public function mine() {
+        $this->template->content = View::instance('v_posts_index');
+        $this->template->title = "My Trips | ".APP_NAME;
+
+
+        $this->template->content->page_after_add = 'mine';
+        $this->template->content->page_after_delete = 'mine';
+
+
+        // Retrieve posts from DB
+        $q = "SELECT posts.content, posts.post_id, posts.created, posts.user_id, posts.user_id, '".
+            $this->user->first_name."' AS first_name, '".
+            $this->user->last_name."' AS last_name FROM posts
+                WHERE user_id=".$this->user->user_id.
+                " ORDER BY posts.created DESC";
+        $posts = DB::instance(DB_NAME)->select_rows($q);
+
+
+        // Display posts
+        $this->template->content->posts = $posts;
+        echo $this->template;
+    }
 
 
     }
