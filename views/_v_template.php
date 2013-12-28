@@ -25,9 +25,9 @@
         <nav>
                 <ul>
                         <li><a href="/">Welcome</a></li>
-                        <span style="font-size: 14px">
+
                         <?php if($user): ?>
-                        </span>
+
                         <li><a href='/users/profile'>View your profile</a></li>
                             <li><a href='/posts/add'>Add entry</a></li>
                             <li><a href='/posts/'>View other GURU entries</a></li>
@@ -35,7 +35,7 @@
                             <li><a href='/users/logout'>Log out</a></li>
                              <span style="font-size: 14px">
                             <?php else: ?>
-                        </span>
+
                             <li><a href='/users/signup'>Sign up</a></li>
                             <li><a href='/users/login'>Log in</a></li>
                         <?php endif; ?>

@@ -13,10 +13,12 @@ body {
             <!-- Print this user's name -->
             <div class="name"><?=$post['first_name']?> <?=$post['last_name']?> posted:</div>
 
-            <p><?=$post['content']?> / were the details</p>
-            <p><?=$post['fuel']?> / was the Fuel Costs</p>
+            <p>Destination: <?=$post['location']?><br>
+            Travelers: <?=$post['travelers']?><br>
+            Details about trip: <?=$post['content']?><br>
+            Estimated Fuel cost via vehicle: $<?=$post['fuel']?></p>
 
-            <h4 class="time"><time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
+            <h4 class="time">Date Posted: <time datetime="<?=Time::display($post['created'],'Y-m-d G:i')?>">
                 <?=Time::display($post['created'])?>
             </time>
           </h4>

@@ -255,3 +255,12 @@
                     posts.user_id AS post_user_id,
                     users_users.user_id AS follower_id,
                     users.first_name 
+2013-12-26 15:18:58 - INFO --> -------------------------- 
+2013-12-26 15:18:58 - INFO --> Controller/Method: users/p_signup 
+2013-12-26 15:18:58 - INFO --> OUTGOING EMAILS ARE DISABLED. THIS EMAIL WAS NOT SENT TO THE RECIPIENTS, ONLY help@cbapro.biz 
+2013-12-26 15:18:58 - INFO --> From: CBA Trip Calculator and Journal (info@cbapro.biz) 
+2013-12-26 15:18:58 - INFO --> To: JANE DOE (INFO@CBAPROFESSIONALS.COM),  
+2013-12-26 15:18:58 - INFO --> CC:  
+2013-12-26 15:18:58 - INFO --> BCC:  
+2013-12-26 15:18:58 - INFO --> Subject: Welcome to CBA Trip Calculator and Journal! 
+2013-12-26 15:18:58 - INFO --> Body: Hi JANE, this is a message to confirm your registration at CBA Trip Calculator and Journal. Visit http://p4.cbapro.biz to login. 
